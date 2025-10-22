@@ -49,10 +49,16 @@ function Cart({ cart, removeFromCart }) {
             </div>
           ))}
 
-          <div className="text-right mt-6">
+          <div className="flex justify-between items-center mt-6">
             <h2 className="text-xl font-semibold">
               Total: <span className="text-blue-600">${totalPrice}</span>
             </h2>
+            <button
+              type="button"
+              className="flex items-center gap-2 bg-green-200 hover:bg-green-300 text-gray-800 font-semibold py-2 px-6 rounded-3xl transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50"
+            >
+              Buy now
+            </button>
           </div>
         </div>
       )}
