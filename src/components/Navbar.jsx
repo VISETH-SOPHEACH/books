@@ -9,7 +9,7 @@ function Navbar() {
       <div className="flex justify-between items-center py-4 px-6 md:px-10">
         <NavLink to="/" className="flex items-center">
           <h1 className="text-2xl sm:text-3xl font-bold text-white drop-shadow-lg hover:scale-105 transition-transform">
-            Bookkk<span className="text-yellow-300">Shop</span>
+            Book<span className="text-yellow-300">Shop</span>
           </h1>
         </NavLink>
 
