@@ -39,7 +39,7 @@ function Navbar() {
         {/* Desktop Cart Button */}
         <div className="hidden md:block">
           <NavLink to="/cart">
-            <button className="bg-white text-indigo-600 px-6 py-2 rounded-full font-bold hover:bg-yellow-300 hover:text-indigo-700 transition-all shadow-lg hover:shadow-xl hover:scale-105">
+            <button className="bg-white text-indigo-600 px-6 py-2 rounded-full font-bold hover:bg-green-500 hover:text-white transition-all shadow-lg hover:shadow-xl hover:scale-105">
               Cart
             </button>
           </NavLink>
@@ -93,7 +93,7 @@ function Navbar() {
         })}
 
         <NavLink to="/cart" onClick={() => setMenuOpen(false)}>
-          <button className="mt-3 bg-white text-indigo-600 px-6 py-2 rounded-full font-bold hover:bg-yellow-300 hover:text-indigo-700 transition-all shadow-lg hover:shadow-xl">
+          <button className="mt-3 bg-white text-indigo-600 px-6 py-2 rounded-full font-bold hover:bg-green-400 hover:text-white transition-all shadow-lg hover:shadow-xl">
             Cart
           </button>
         </NavLink>
