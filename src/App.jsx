@@ -6,6 +6,7 @@ import Book from "./pages/Book";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Cart from "./components/Cart";
+import Qr from "./components/qr"; // 👈 import the QR component
 import img1 from "./assets/img/btes.jpg";
 import img2 from "./assets/img/jk.jpg";
 import img3 from "./assets/img/kl.jpg";
@@ -16,6 +17,7 @@ import img7 from "./assets/img/k.jpg";
 import img8 from "./assets/img/sr.jpg";
 import img9 from "./assets/img/ok.jpg";
 import img10 from "./assets/img/nh.jpg";
+import img11 from "./assets/img/qr.JPG";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -95,12 +97,12 @@ function App() {
 
   // Add book to cart
   const addToCart = (book) => {
-    setCart((prev) => [...prev, book]);
+    setCart((prev) => [...prev, { ...book, cartId: Date.now() }]);
   };
 
   // Remove book from cart
-  const removeFromCart = (id) => {
-    setCart((prev) => prev.filter((item) => item.id !== id));
+  const removeFromCart = (cartId) => {
+    setCart((prev) => prev.filter((item) => item.cartId !== cartId));
   };
 
   return (
@@ -118,7 +120,9 @@ function App() {
           <Route
             path="/cart"
             element={<Cart cart={cart} removeFromCart={removeFromCart} />}
-          />
+          >
+            <Route path="qr" element={<Qr />} />
+          </Route>
         </Routes>
       </main>
     </Router>
