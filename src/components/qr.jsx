@@ -17,7 +17,7 @@ function Qr() {
           onClick={() => navigate("/cart")}
           className="mt-4 self-end px-6 py-2 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold hover:from-blue-700 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105"
         >
-          Back (don't buy, it's just a test site)
+          Back don't buy, it's just a test site
         </button>
       </div>
     </div>

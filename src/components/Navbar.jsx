@@ -70,7 +70,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white text-center overflow-hidden transition-all duration-300 ${
+        className={`md:hidden bg-gradient-to-r  from-gray-800 via-gray-700 to-gray-600 shadow-lg text-white text-center overflow-hidden transition-all duration-300 ${
           menuOpen ? "max-h-96 py-4" : "max-h-0"
         }`}
       >
