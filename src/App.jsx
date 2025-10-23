@@ -6,7 +6,7 @@ import Book from "./pages/Book";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Cart from "./components/Cart";
-import Qr from "./components/qr"; // 👈 import the QR component
+import Qr from "./components/qr";
 import img1 from "./assets/img/btes.jpg";
 import img2 from "./assets/img/jk.jpg";
 import img3 from "./assets/img/kl.jpg";
@@ -17,7 +17,6 @@ import img7 from "./assets/img/k.jpg";
 import img8 from "./assets/img/sr.jpg";
 import img9 from "./assets/img/ok.jpg";
 import img10 from "./assets/img/nh.jpg";
-import img11 from "./assets/img/qr.JPG";
 
 function App() {
   const [cart, setCart] = useState([]);
